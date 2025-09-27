@@ -8,8 +8,8 @@ body {
 .main_box {
     background: #2d2d2e;
     color: #fff;
-    max-width: 350px;
-    margin: 60px auto 0 auto;
+    max-width: 400px;
+    margin: 40px auto 0 auto;
     padding: 32px 28px 28px 28px;
     border-radius: 14px;
     box-shadow: 0 4px 24px rgba(45,45,46,0.13);
@@ -32,7 +32,15 @@ body {
 .input_box form {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
+    text-align: left;
+}
+
+.input_box p {
+    margin: 4px 0;
+    font-size: 0.95rem;
+    color: #fff;
+    font-weight: 500;
 }
 
 .input_box input[type="text"],
@@ -43,13 +51,14 @@ body {
     font-size: 1rem;
     background: #fff;
     color: #2d2d2e;
-    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
+
 
 .input_box button {
     display: block;
-    margin: 12px auto 0 auto;
-    padding: 10px 28px;
+    margin: 20px auto 0 auto;
+    padding: 12px 28px;
     font-size: 1rem;
     background: #2d2d2e;
     color: #fff;
@@ -57,9 +66,29 @@ body {
     border-radius: 20px;
     cursor: pointer;
     width: 100%;
+    font-weight: 600;
 }
 
 .input_box button:hover {
     background: #fff;
     color: #2d2d2e;
+}
+
+
+@media (max-width: 480px) {
+    .main_box {
+        margin: 20px auto;
+        padding: 24px 20px;
+        max-width: 90%;
+    }
+
+    .main_box h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .input_box input[type="text"],
+    .input_box input[type="number"] {
+        padding: 8px 10px;
+    }
 }

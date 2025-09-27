@@ -1,0 +1,70 @@
+.about-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.about-section {
+    background: #2d2d2e;
+    color: #fff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(45,45,46,0.13);
+}
+
+.about-section h2 {
+    font-family: "Pixelify Sans", sans-serif;
+    color: #fff;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.features-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list li {
+    font-size: 1.1rem;
+    padding: 8px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+.features-list li:before {
+    content: "•";
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .about-container {
+        padding: 0 15px;
+    }
+    
+    .about-section {
+        padding: 20px;
+    }
+
+    .about-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-section p,
+    .features-list li {
+        font-size: 1rem;
+    }
+}
