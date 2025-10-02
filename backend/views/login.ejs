@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&family=Montserrat:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/login.css">
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="/main_logo.png" alt="Logo">
+        <h1>INVERO</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/aboutus">ABOUT US</a></li>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="/signup">SIGN UP</a></li>
+        </ul>
+    </nav>
+    <div class="main_box">
+        <h1>Login</h1>
+        <div class="input_box">
+            <form onsubmit="return validateForm()">   
+                <p>Registered email</p>
+                <input type="text" placeholder="Enter your email" id="email" name="email" >
+                <p>Phone number</p>
+                <input type="number" id="phoneNumber" placeholder="Enter your number" name="phone">
+                <p>Password</p>
+                <input type="password" id="password" placeholder="Enter your password" name="password">
+                <p>Don't have an account <a href="/signup" style="color: aqua;">Register</a></p>
+                <button>Submit</button>
+            </form>
+            
+                
+        </div>
+    
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
